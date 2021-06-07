@@ -291,6 +291,20 @@ const GUIComponent = props => {
                                             id="gui.gui.soundsTab"
                                         />
                                     </Tab>
+                                    <Tab
+                                        className={tabClassNames.tab}
+                                        onClick={onActivateSoundsTab}
+                                    >
+                                        <img
+                                            draggable={false}
+                                            src={soundsIcon}
+                                        />
+                                        <FormattedMessage
+                                            defaultMessage="Python"
+                                            description="Button to get to the python panel"
+                                            id="gui.gui.pythonTab"
+                                        />
+                                    </Tab>
                                 </TabList>
                                 <TabPanel className={tabClassNames.tabPanel}>
                                     <Box className={styles.blocksWrapper}>

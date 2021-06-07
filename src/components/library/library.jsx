@@ -128,8 +128,10 @@ class LibraryComponent extends React.Component {
         this.setState({filterQuery: ''});
     }
     getFilteredData () {
+      console.log(this.props.data)
         if (this.state.selectedTag === 'all') {
             if (!this.state.filterQuery) return this.props.data;
+            console.log(this.props.data)
             return this.props.data.filter(dataItem => (
                 (dataItem.tags || [])
                     // Second argument to map sets `this`

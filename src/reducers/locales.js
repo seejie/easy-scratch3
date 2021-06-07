@@ -8,12 +8,14 @@ addLocaleData(localeData);
 
 const UPDATE_LOCALES = 'scratch-gui/locales/UPDATE_LOCALES';
 const SELECT_LOCALE = 'scratch-gui/locales/SELECT_LOCALE';
-
+// 语言
 const initialState = {
     isRtl: false,
-    locale: 'en',
+    // locale: 'en',
+    locale: 'zh-cn',
     messagesByLocale: editorMessages,
-    messages: editorMessages.en
+    // messages: editorMessages.en
+    messages: editorMessages['zh-cn']
 };
 
 const reducer = function (state, action) {
